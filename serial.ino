@@ -24,7 +24,7 @@ void add(int num) {
 void loop() {
   if (Serial.available() > 0) {
     // Multiple functions can be called from serial monitor with one call by seperating them with character \
-    // For example: ledon()\ledoff()\text(Hello World)\
+    // For example: ledon()\ledoff()\text(Hello World)\add(53)\
     
     String inpstr = Serial.readStringUntil('\\');
     
